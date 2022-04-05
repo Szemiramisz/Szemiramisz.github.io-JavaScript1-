@@ -1,0 +1,21 @@
+body{
+    box-sizing: border-box;
+    background-image: url(../Szemiramisz.github.io-JavaScript1-/fejlec.jpg);
+    color: beige;
+}
+    
+#header{
+    text-align: center;
+}
+
+#nav ul li {
+    list-style-type: none;
+  }
+
+#nav ul li a{
+    list-style-type: none;
+    color: beige;
+  }
+#section{
+    
+}

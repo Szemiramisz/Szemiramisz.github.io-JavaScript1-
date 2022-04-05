@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1. Házi feladat</title>
+    <link rel="stylesheet" href="../Szemiramisz.github.io-JavaScript1-/styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <H1>Javascript Alapok</H1>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="1">konkatenáció</a></li>
+            <li><a href="2">operátor</a></li>
+            <li><a href="3">változó</a></li>
+            <li><a href="4">deklaráció</a></li>
+            <li><a href="5">undefined</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <artile>
+            <h2>Konkatenáció</h2>
+            <p>Számok, karaktersorozatok, szavak összefűzése.</p>
+            <h3>Példa</h3>
+            <code>"dog" + "house" == "doghouse" </code>
+        </artile>
+        <article> <iframe src="https://www.youtube.com/embed/9Q8BAZffbz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </div>
+    <div class="section">
+        <artile>
+            <h2>Operátor</h2>
+            <p>Az operátorok olyan funkciók, amelyek valamilyen műveletet végeznek el változókon, vagy más különböző
+                értékeken, ezek lesznek az operandusok.
+            <ul>
+
+                <li>Értékadás:
+                    Hasonlóan a fenti két nyelvhez, az értékadásnak itt is megtalálhatjuk számos változatát, melyek az
+                    értékadáson felül valamilyen más műveletet is elvégeznek a bal-, illetve jobboldali operandusokkal.
+                    Például az x*=y utasítás jelentése x=x*y.</li>
+                <li> Összehasonlítás:
+                    Az összehasonlítások logikai értékekkel térnek vissza. Egyenlőség esetén vizsgálhatjuk csak az
+                    értéket
+                    (==), valamint a típus egyenlőségét is (===). Előbbi esetben a nyelv automatikusan konvertálja az
+                    értéket, hogy a bal-, és jobboldal típusa megegyezzen. Utóbbinál ez nem történik meg.</li>
+                <li>Aritmetikai:
+                    növelés (++), csökkentés (--), negáció (-), illetve a moduló (%)</li>
+                <li> Bitenkénti:
+                    A bitenkénti operátorok használatakor az operandusokat először 32 bites számokká konvertáljuk, majd
+                    ezeken a biteken egymás után alkalmazzuk a műveletet. Például bitenkénti és esetében "15 & 9"
+                    eredménye
+                    9 lesz.</li>
+                <li> Logikai:
+                    A nyelv a logikai és, illetve vagy műveleteknél lusta kiértékelést használ, azaz ha már a kifejezés
+                    első
+                    tagja megadja az eredményt, a második tagot már nem is veszi figyelembe. Például "false && bármi"
+                    esetén
+                    az eredmény hamis lesz, és ezért nem kell megnézni, mi van a bármi helyén.</li>
+                <li> Sztring:
+                    A sztringekre az összehasonlító operátorokon kívül a konkatenáció operátort (+) is lehet használni.
+                    Ez
+                    az operátor két sztringet összekapcsol és visszatér a két operandus sztring uniójaként kapott
+                    sztringgel. A rövidített értékadó operátort (+=), szintén lehet használni sztringek konkatenálására.
+                </li>
+                <li> Különleges:
+                    ide tartozik minden más operátor:
+                    feltételes kiértékelés (a ? b : c): a logikai értékétől függően b-t, vagy c-t adja vissza
+                    vessző: tömbelemek felsorolásához
+                    delete: objektumtörléshez
+                    in: objektum bejárásához
+                    instanceof: objektum típusának lekérdezése
+                    new: új objektum létrehozása
+                    this: saját objektum
+                    typeof: objektum típusának lekérdezése
+                    void: kifejezés kiértékelése visszatérési érték nélkül</li>
+
+            </ul>
+            </p>
+            <h3>Példa</h3>
+            <code>
+            Operátor	Példa	Eredmény	Leírás
+            +	5+2	7	összeadás
+            –	5-2	3	kivonás
+            *	5*2	10	szorzás
+            **	5**2	25	hatványozás
+            /	5/2	2,5	osztás
+            %	5%2	1	a maradékot adja vissza
+            ++	5++	6	eggyel növeli az értékét
+            —	5–	4	eggyel csökkenti az értékét
+        </code></article>
+            <article> <iframe src="https://www.youtube.com/embed/FZzyij43A54" title="YouTube video player"></iframe>
+            </article>
+    </div>
+    <div class="section">
+        <artile>
+            <h2>Változó</h2>
+            <p>A változók az adatok tárolására (adatértékek tárolására) szolgáló tárolók.
+                Egy változót többször is deklarálhatunk, hiszen ez a nyelv számára nem jelent többet egy értékadásnál.
+                Ha
+                még nem adtunk értéket a változónak, és var nélkül deklaráltuk, kiértékelésének eredménye futási idejű
+                hibát
+                fog kiváltani, míg ha használtunk var kulcsszót, az eredmény undefined érték lesz, amely logikai
+                műveletben
+                hamisat jelent. Ha pedig egy változónak a null értéket adtuk, akkor szöveges műveletben "null"
+                szövegként,
+                számításban nulla értékként helyettesítődik be.
+            </p>
+            <h3>Példa</h3>
+            <code>
+            var x = 5;
+            var y = 6;
+            var z = x + y;
+
+            Ebben a példában x, y és z változók.
+            z értéke: 11
+        </code></article>
+            <article> <iframe src="https://youtube.com/shorts/f3gm7-oZpIc?feature=share" title="YouTube video player"></iframe>
+            </article>
+    </div>
+    <div class="section">
+        <artile>
+            <h2>Deklaráció</h2>
+            <p>Deklarálunk egy változót, hogy azok nevére hivatkozva tudjunk velük műveleteket végezni a tárolás
+                helyétől
+                függetlenül, illetve bárhol a program futása során újra fel tudjuk használni, illetve a benne lévő
+                értéket
+                (néhány kivételtől eltekintve) meg tudjuk változtatni.</p>
+            <h3>Példa</h3>
+            <code>
+                let a = 10;
+                let b = 20;
+                let age = "26"; 
+            </code></article>
+            <article> <iframe src="" title="YouTube video player"></iframe>
+            </article>
+    </div>
+    <div class="section">
+        <article>
+            <h2>Undefined</h2>
+            <p>Amikor a változó létre lett hozva, kapott nevet, de nem lett hozzárendelve érték. Az adott memóriarekesz
+                még
+                üres, arra vár, hogy tegyünk bele valamit. Ha ezzel az éréték nélküli változóval, üres adattal próbálunk
+                műveletet végezni, akár kiíratni, ezt a hibaüzenetet kaphatjuk: Undefined. </p>
+            <h3>Példa</h3>
+            <code>
+                let age;
+                console.log(age); // console: undifined 
+            </code>
+        </article>
+        <article> <iframe src="https://youtu.be/oYhyG1M-W-o" title="YouTube video player"></iframe>
+        </article>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
